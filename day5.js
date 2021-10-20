@@ -6,14 +6,13 @@ function solution(phone_number) {
   var answer = "";
 
   phone_number = phone_number.split("");
-  console.log(phone_number);
+
   for (let i = -1; i < phone_number.length - 4; i++) {
     if (phone_number.length === 4) {
       answer = phone_number.join("");
     } else {
       phone_number[i] = "*";
       answer = phone_number.join("");
-      console.log(answer);
     }
   }
 
