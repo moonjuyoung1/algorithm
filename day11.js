@@ -20,3 +20,19 @@ function solution(numbers) {
   answer = [...result];
   return answer;
 }
+
+function solution(p, c) {
+  const sum = p.concat(c);
+
+  for (let i = 0; i < p.length; i++) {
+    for (let v = 0; v < c.length; v++) {
+      if (p[i] === c[v]) {
+        p.splice(i, 1);
+
+        i--;
+
+        console.log(p);
+      }
+    }
+  }
+}
