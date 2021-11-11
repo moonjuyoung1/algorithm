@@ -11,3 +11,5 @@ function solution(n) {
   return n;
 }
 solution(45);
+
+// tostring 으로 3진법 변환후 parseInt를 통해 10진법으로 다시 변환시켰다.
