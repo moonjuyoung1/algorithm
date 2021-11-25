@@ -12,11 +12,8 @@
 // 암호화된 배열은 지도의 각 가로줄에서 벽 부분을 1, 공백 부분을 0으로 부호화했을 때 얻어지는 이진수에 해당하는 값의 배열이다.
 
 function solution(n, arr1, arr2) {
-  var padding = "";
   var answer = [];
-  for (let i = 0; i < n; i++) {
-    padding = padding + 0;
-  }
+
   // 처음에는 배열을 완성하고 비교한다음 문자열을 변경하려고 했으나 실패를 해서
   // 한개요소를 두개의 one, two 요소를 비교해서 # or ' ' 문자열을 변경해 완성한 후 배열에 넣어서 리턴하였습니다.
 
@@ -36,3 +33,5 @@ function solution(n, arr1, arr2) {
   }
   return answer;
 }
+
+// 비트연산자를 사용해 맵을 돌리는 방법도 있었다.
